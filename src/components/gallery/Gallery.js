@@ -50,7 +50,7 @@ class Gallery extends Component {
 				<div>
 					{this.state.imgList.map((image, index) => {
 						return (
-							<SampleDisplay 
+							<SampleDisplay key={`sample-display-${index}`}
 								index={index}
 								url={image.img_src} 
 								inputAlt={`${image.rover.name}-${index}`} 

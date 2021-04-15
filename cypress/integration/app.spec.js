@@ -9,7 +9,7 @@ describe('Mars rover app tests', () => {
 		})
 
 		it('Displays Subheader', () => {
-			cy.contains('Images from 54 million kilometres away!');
+			cy.contains('Images from 225 million kilometres away!');
 		})
 
 		it('Displays find photo button', () => {
@@ -46,7 +46,7 @@ describe('Mars rover app tests', () => {
 		})
 
 		it('searching curiocity images returns curiocity images', () => {
-			
+			// insert mock tests here
 		})
 	})
 })
