@@ -4,6 +4,7 @@ import Header from "./components/header/Header.js";
 import MainSubheader from "./components/mainSubheader/MainSubheader.js";
 import Gallery from './components//gallery/Gallery.js'
 import './App.css'
+import ImagePage from './ImagePage.js';
 
 
 function App() {
@@ -12,9 +13,13 @@ function App() {
 		<div className="App">
 			<Header />
 			<Switch>
-				<Route path="/">
+				<Route exact path="/">
 					<MainSubheader />
 					<Gallery />
+				</Route>
+
+				<Route path="/imagePage">
+					<ImagePage />
 				</Route>
 			</Switch>
 		</div>

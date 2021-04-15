@@ -68,23 +68,3 @@ class Gallery extends Component {
 }
 
 export default Gallery;
-
-
-// handleClick = () => {
-// 	this.clearImages();
-// 	// console.log(process.env.NASA_API_KEY);
-// 	const inputUrl = 'https://api.nasa.gov/mars-photos/api/v1/rovers/perseverance/latest_photos?api_key=fCJdOzCDTXigLUkBMCjPcRkr2KSTLWePwEeaH5n4'; 
-// 	// const inputUrl = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=fCJdOzCDTXigLUkBMCjPcRkr2KSTLWePwEeaH5n4'; 
-// 	axios.get(inputUrl)
-// 	.then(res => {
-// 		while(this.state.imgList.length < 8) {
-// 			// console.log(res.data);
-// 			let index = Math.floor(Math.random() * res.data.latest_photos.length);
-// 			// console.log(index);
-// 			let newImg = res.data.latest_photos[index]
-// 			if(!this.state.imgList.includes(newImg)) {
-// 				this.setState({imgList: [...this.state.imgList, newImg]});
-// 			}
-// 		}
-// 	})
-// }
